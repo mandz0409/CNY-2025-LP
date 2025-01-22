@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CNY 2025</title>
+
+	<!-- Styles -->
+	<style>
+        html {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url(https://s.pacn.ws/gallery/large/GA.08611.0014.jpg?sqhg7v&v=PX-408);
+            background-repeat: no-repeat !important;
+            background-position: top !important;
+            background-size: cover !important;
+            background-attachment: scroll !important;
+            margin: 0 !important;
+            padding: 0;
+            max-width: 100% !important;
+        }
+
+		#website {
+			max-width: 100%!important;
+		}
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .main-container {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .three-column {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .one-column {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .three-column a img,
+        .two-column a img,
+        .one-column a img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right	{
+            text-align: right;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .align-center {
+            align-items: center;
+        }
+
+        .mt-5px {
+            margin-top: 5px;
+        }
+
+        .mt-10px {
+            margin-top: 10px;
+        }
+
+        .mt-20px {
+            margin-top: 20px;
+        }
+
+        .mt-50px {
+            margin-top: 50px;
+        }
+
+        .mb-30px {
+            margin-bottom: 30px;
+        }
+
+        .mb-60px {
+            margin-bottom: 60px;
+        }
+
+        .mb-20px {
+            margin-bottom: 20px;
+        }
+
+        .mb-15px {
+            margin-bottom: 15px;
+        }
+
+        .pb-5 {
+            padding-bottom: 5em;
+        }
+
+        .pb-10 {
+            padding-bottom: 10em;
+        }
+
+        .w-25 {
+            width: 25%;
+        }
+
+        .w-50 {
+            width: 50%;
+        }
+
+        .w-60 {
+            width: 60%;
+        }
+
+        .w-65 {
+            width: 65%;
+        }
+
+        .w-70 {
+            width: 70%;
+        }
+
+        .w-75 {
+            width: 75%;
+        }
+
+        .w-80 {
+            width: 80%;
+        }
+
+        .w-90 {
+            width: 90%;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        .h-auto {
+            height: auto !important;
+        }
+
+        .h-100 {
+            height: 100%;
+        }
+
+        .m-top-banner {
+            margin-top: 10rem;
+        }
+
+        #onSaleDisplay {
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .pulse:hover {
+            animation: pulse .3s infinite;
+        }
+
+        @media (max-width: 425px) {
+            .container main {
+                margin: 0px .5em 0em .5em !important;
+            }
+
+            .font-size {
+                font-size: .5rem;
+            }
+
+            .m-bot {
+                margin-bottom: 1rem;
+            }
+
+            .m-top-banner {
+                margin-top: 4rem;
+            }
+
+            .three-column a img,
+            .two-column a img {
+                padding: 2px;
+            }
+        }
+
+        @media (min-width: 425px) and (max-width: 768px) {
+            .container main {
+                margin: 0em 2em 0em 2em !important;
+            }
+
+            .font-size {
+                font-size: .6rem;
+            }
+
+            .m-bot {
+                margin-bottom: 2rem;
+            }
+
+            .m-top-banner {
+                margin-top: 4rem;
+            }
+
+            .three-column a img,
+            .two-column a img {
+                padding: 2px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .container main {
+                margin: 0px 5em 0em 5em !important;
+            }
+
+            .font-size {
+                font-size: .8rem;
+            }
+
+            .m-bot {
+                margin-bottom: 2rem;
+            }
+
+            .m-top-banner {
+                margin-top: 4rem;
+            }
+
+            .three-column a img,
+            .two-column a img {
+                padding: 3px;
+            }
+        }
+
+        @media (min-width: 1024px) and (max-width: 1440px) {
+            .container main {
+                margin: 0px 15em 0em 15em !important;
+            }
+
+            .font-size {
+                font-size: .8rem;
+            }
+
+            .m-bot {
+                margin-bottom: 2.5rem;
+            }
+
+            .m-top-banner {
+                margin-top: 4rem;
+            }
+
+            .three-column a img,
+            .two-column a img {
+                padding: 5px;
+            }
+        }
+
+        @media (min-width: 1440px) and (max-width: 2560px) {
+            .container main {
+                margin: 0px 28em 0em 28em !important;
+            }
+
+            .font-size {
+                font-size: .8rem;
+            }
+
+            .m-bot {
+                margin-bottom: 2rem;
+            }
+
+            .m-top-banner {
+                margin-top: 4rem;
+            }
+
+            .three-column a img,
+            .two-column a img {
+                padding: 5px;
+            }
+        }
+
+        @media (min-width: 2560px) {
+            .container main {
+                margin: 0px 50em 5em 50em !important;
+            }
+
+            .font-size {
+                font-size: 1.5rem;
+            }
+
+            .m-bot {
+                margin-bottom: 3rem;
+            }
+
+            .m-top-banner {
+                margin-top: 6rem;
+            }
+
+            .three-column a img,
+            .two-column a img {
+                padding: 5px;
+            }
+        }
+
+	</style>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<!-- Styles -->
+
+</head>
+
+<body>
+<!-- Container -->
+<div class="container" style="max-width: 100%;">
+	<main class="pb-5">
+		<div class="main-container">
+
+			<!--Lunar New Year Banner-->
+			<div class="one-column">
+				<a href="#" class="justify-content-center">
+					<img src="https://s.pacn.ws/gallery/large/GA.08611.0002.png?sqhf0f&v=PX-408" alt="BFS-Banner" style="margin: 0 auto; width: 70% !important;">
+				</a>
+			</div>
+			<!--Lunar New Year Banner-->
+
+			<!--Lunar New Year Banner-->
+			<div class="one-column m-top-banner">
+				<a href="#" class="justify-content-center">
+					<img src="https://s.pacn.ws/gallery/large/GA.08611.0003.png?sqhf0g&v=PX-408" class="w-100" alt="BFS-Banner">
+				</a>
+			</div>
+			<!--Lunar New Year Banner-->
+
+			<!--Free Shipping Description-->
+			<div class="one-column text-right font-size m-bot" style="color: #ffffff; font-weight: bold">*DIGITAL CARDS EXCLUDED ON FREE SHIPPING PROMO*</div>
+			<!--Free Shipping Description-->
+
+			<!--On sale display-->
+
+			<!--Games Display-->
+			<div class="one-column m-bot">
+				<a href="#" class="justify-content-center">
+					<img src="https://s.pacn.ws/gallery/large/GA.08611.0004.png?sqhf0i&v=PX-408" class="w-100" alt="BFS-Banner">
+				</a>
+			</div>
+			<!--Games Display-->
+
+			<!--Toys, Amiibo, Lifestyle Display-->
+			<div class="three-column m-bot">
+				<a href="#">
+					<img src="https://s.pacn.ws/gallery/large/GA.08611.0005.png?sqhf0k&v=PX-408" class="w-100 h-100" alt="Games">
+				</a>
+				<a href="#">
+					<img src="https://s.pacn.ws/gallery/large/GA.08611.0006.png?sqhf0n&v=PX-408" class="w-100 h-100" alt="Digital">
+				</a>
+				<a href="#">
+					<img src="https://s.pacn.ws/gallery/large/GA.08611.0007.png?sqhf0p&v=PX-408" class="w-100 h-100" alt="Digital">
+				</a>
+			</div>
+			<!--Toys, Amiibo, Lifestyle Display-->
+
+			<!--Music Display-->
+			<div class="one-column m-bot">
+				<a href="#" class="justify-content-center">
+					<img src="https://s.pacn.ws/gallery/large/GA.08611.0008.png?sqhf0r&v=PX-408" class="w-100" alt="BFS-Banner">
+				</a>
+			</div>
+			<!--Games Display-->
+
+			<!--Controllers, Headsets, More Accessories Display-->
+			<div class="three-column m-bot">
+				<a href="#">
+					<img src="https://s.pacn.ws/gallery/large/GA.08611.0009.png?sqhf0t&v=PX-408" class="w-100 h-100" alt="Games">
+				</a>
+				<a href="#">
+					<img src="https://s.pacn.ws/gallery/large/GA.08611.0010.png?sqhf0v&v=PX-408" class="w-100 h-100" alt="Digital">
+				</a>
+				<a href="#">
+					<img src="https://s.pacn.ws/gallery/large/GA.08611.0011.png?sqhf0x&v=PX-408" class="w-100 h-100" alt="Digital" style="width: 120%!important;">
+				</a>
+			</div>
+			<!--Controllers, Headsets, More Accessories Display-->
+
+			<!--PC Bundle Banner-->
+			<div class="one-column m-bot">
+				<a href="#" class="justify-content-center">
+					<img src="https://s.pacn.ws/gallery/large/GA.08611.0012.png?sqhf0z&v=PX-408" class="w-100" alt="BFS-Banner">
+				</a>
+			</div>
+			<!--PC Bundle Banner-->
+
+			<!--Shop now button-->
+			<div class="one-column m">
+				<a href="#" class="justify-content-center">
+					<img src="https://s.pacn.ws/gallery/large/GA.08611.0013.png?sqhf11&v=PX-408" class="w-50" alt="BFS-Banner" style="margin: 0 auto">
+				</a>
+			</div>
+			<!--Shop now button-->
+
+		</div>
+	</main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+		integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Scripts -->
+
+</body>
+
+</html>
+
+
